@@ -2,7 +2,7 @@
   "type": "panel",
   "name": "Graph Panel Template",
 
-  "id": "graph-panel-template-panel",
+  "id": "apica-graph-panel",
 
   "info": {
     "author": {

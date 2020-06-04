@@ -9,6 +9,7 @@ import 'grafana/vendor/flot/jquery.flot.dashes.js';
 import 'grafana/vendor/flot/jquery.flot.gauge.js';
 import 'grafana/vendor/flot/jquery.flot.pie.js';
 import './vendor/flot/jquery.flot.events';
+import './vendor/flot/jquery.flot.severities';
 import { EventManager } from './vendor/grafana/event_manager';
 import { updateLegendValues } from './vendor/grafana/time_series2';
 import { tickStep } from './vendor/grafana/ticks';
@@ -710,4 +711,4 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
   };
 }
 
-coreModule.directive('grafanaTemplateGraph', graphDirective);
+coreModule.directive('apicaGraph', graphDirective);
