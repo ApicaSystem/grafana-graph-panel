@@ -183,7 +183,7 @@ export default class TimeSeries {
     }
   }
 
-  getFlotPairs(fillStyle) {
+  getFlotTuples(fillStyle) {
     var result = [];
 
     this.stats.total = 0;
@@ -277,7 +277,15 @@ export default class TimeSeries {
         }
       }
 
-      result.push([currentTime, currentValue]);
+      var tuple = [currentTime, currentValue];
+
+      if (this.datapoints[i].length > 2) {
+        for (var j = 2; j < this.datapoints[i].length; j++) {
+          tuple.push(this.datapoints[i][j]);
+        }
+      }
+
+      result.push(tuple);
     }
 
     if (this.stats.max === -Number.MAX_VALUE) {
