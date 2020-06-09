@@ -46,6 +46,8 @@ function ($) {
 
           var points = datapoints.points, ps = datapoints.pointsize;
   
+          var drawMarkerAnyway = points.length === datapoints.pointsize; // only 1 point
+
           for (var i = 0; i < points.length; i += ps) {
 
             var x = points[i];
@@ -60,7 +62,7 @@ function ($) {
             x = axisx.p2c(x);
             y = axisy.p2c(y) + offset;
 
-            ctx.arc(x, y, getRadiusBySeverity(severity), 0, shadow ? Math.PI : Math.PI * 2, false);
+            ctx.arc(x, y, getRadiusBySeverity(severity, drawMarkerAnyway), 0, shadow ? Math.PI : Math.PI * 2, false);
 
             ctx.closePath();
 
@@ -72,16 +74,17 @@ function ($) {
         }
       }
 
-      function getRadiusBySeverity(severity) {
-        return _.includes([4, 8, 16], severity) ? 6 : 0;        
+      function getRadiusBySeverity(severity, anyway) {
+        return _.includes([4, 8, 16], severity) || anyway ? 6 : 0;        
       }
 
       function getColorBySeverity(severity) {
         switch(severity) {
+          case 2: return "#4572A7";
           case 4: return "#E0D200";
           case 8: return "#FF9933";
           case 16: return "#C91818";
-          default: "#000000";
+          default: "#7F7F7F";
         }
       }
 
