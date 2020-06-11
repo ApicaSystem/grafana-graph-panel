@@ -18,7 +18,7 @@ function ($) {
   function init(plot) {
 
     function processRawData(plot, series, data, datapoints) {
-      if (data && data[0] && data[0].length === 4) {
+      if (series.meta == 'seriesWithSeverity') {
 
         var format = [
           { x: true, number: true, required: true },
@@ -35,6 +35,10 @@ function ($) {
         format.push({ severity: true, number: true, required: true });
 
         datapoints.format = format;
+
+        series.data = _.map(data, function(item) {
+          return [item[0], item[1][0], 0, item[1][1]];
+        });
       }
     };
 

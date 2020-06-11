@@ -91,6 +91,7 @@ export default class TimeSeries {
   transform: any;
   flotpairs: any;
   unit: any;
+  meta: any;
 
   constructor(opts) {
     this.datapoints = opts.datapoints;
@@ -103,6 +104,7 @@ export default class TimeSeries {
     this.stats = {};
     this.legend = true;
     this.unit = opts.unit;
+    this.meta = opts.meta;
     this.hasMsResolution = this.isMsResolutionNeeded();
   }
 
