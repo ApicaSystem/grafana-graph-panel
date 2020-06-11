@@ -7,7 +7,7 @@ import 'grafana/vendor/flot/jquery.flot.fillbelow.js';
 import 'grafana/vendor/flot/jquery.flot.crosshair.js';
 import 'grafana/vendor/flot/jquery.flot.dashes.js';
 import 'grafana/vendor/flot/jquery.flot.gauge.js';
-import 'grafana/vendor/flot/jquery.flot.pie.js';
+//import 'grafana/vendor/flot/jquery.flot.pie.js';
 import './vendor/flot/jquery.flot.events';
 import './vendor/flot/jquery.flot.severities';
 import { EventManager } from './vendor/grafana/event_manager';
