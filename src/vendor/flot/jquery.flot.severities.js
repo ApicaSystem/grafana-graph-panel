@@ -2,19 +2,8 @@ define(['jquery'],
 function ($) {
   'use strict';
 
-  /*
-   * jquery.flot.severities
-   *
-   * description: Flot plugin for adding marker colors to the plot
-   * version: 0.0.1
-   * authors:
-   *
-   * released under MIT License and GPLv2+
-   */
+  // Dependency: ASM Datasource v.1.1.3
 
-  /**
-   * initialize the plugin for the given plot
-   */
   function init(plot) {
 
     function processRawData(plot, series, data, datapoints) {
