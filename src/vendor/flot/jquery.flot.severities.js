@@ -18,7 +18,7 @@ function ($) {
   function init(plot) {
 
     function processRawData(plot, series, data, datapoints) {
-      if (series.meta == 'seriesWithSeverity') {
+      if (series.meta == 'series_severity') {
 
         var format = [
           { x: true, number: true, required: true },
