@@ -1,21 +1,22 @@
 {
   "type": "panel",
-  "name": "Graph Panel Template",
+  "name": "Apica Graph",
 
   "id": "apica-graph-panel",
 
   "info": {
+    "description": "Panel extension to show additional info on series - color points corresponding to ASM check severity.",
     "author": {
-      "name": "Grafana Project",
-      "url": "https://grafana.com"
+      "name": "Apica",
+      "url": "https://www.apicasystem.com"
     },
     "logos": {
-      "small": "img/icn-graph-panel.svg",
-      "large": "img/icn-graph-panel.svg"
+      "small": "img/graph-panel_asm.svg",
+      "large": "img/graph-panel_asm.svg"
     }
   },
   "dependencies": {
-    "grafanaVersion": "4.6.x"
+    "grafanaVersion": "5.0.x"
   }
 }
 
