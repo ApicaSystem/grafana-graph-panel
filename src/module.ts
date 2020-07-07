@@ -179,10 +179,16 @@ class GraphCtrl extends MetricsPanelCtrl {
 
   onDataReceived(dataList) {
     this.dataList = dataList;
-    this.seriesList = this.processor.getSeriesList({
-      dataList: dataList,
-      range: this.range,
-    });
+    
+    try {
+      this.seriesList = this.processor.getSeriesList({
+        dataList: dataList,
+        range: this.range,
+      });
+    } catch(err) {
+      this.seriesList = [];
+      //alert(err.message);
+    }
 
     this.dataWarning = null;
     const datapointsCount = this.seriesList.reduce((prev, series) => {
