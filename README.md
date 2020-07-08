@@ -1,38 +1,20 @@
-# Graph Panel
+## Apica Graph Panel Plugin for Grafana
 
-Webpack copy of [Grafana default panel](http://docs.grafana.org/features/panels/graph/). 
-Now you can make your plugins based on graph panel and hack it easier.
+Supports series data format with severities (W, E, F) provided by Apica Synthetic Monitoring datasource and displays corresponding points with severity color.
 
-Works only on Grafana versions >= V5.0.1 
+![Select Severity](https://raw.githubusercontent.com/ApicaSystem/Grafana.graph-panel/apica-master/src/img/SelectSeverity.png "Select Severity")
 
-# Build
+Based on [Graph Panel plugin](https://github.com/CorpGlory/grafana-graph-panel) v0.1.0 - a Webpack copy of Grafana default panel.
 
-```
-npm install
-npm run build
-```
+Works only on Grafana versions >= V5.0.1
 
-# After you fork
+The original readme file can be found here: [README.md](https://github.com/CorpGlory/grafana-graph-panel/blob/master/README.md).
 
-Sorry, but it's common for Grafana plugins make directives which collide with each other. It comes from AngularJS.
-Use `ctrl+f` to find params in source code files below: 
+### Changelog
 
-* Change in `plugin.json` id from `graph-panel-template-panel` to `something-else-graph-panel`
-* Change in `src/graph.ts` directive name from `grafanaTemplateGraph` to `somethingElseGraph`
-* Change in `src/legend.ts` directive name from `graphTemplateLegend` to `somethingElseLegend`
-* Change in `src/axes_editor` param `templateUrl` param from `public/plugins/graph-panel-template-panel/partials/axes_editor.html` to `public/plugins/something-else-graph-panel/partials/axes_editor.html`
-* Change in `template.ts` param `grafana-template-graph` to `something-else-graph` and `graph-template-legend` to `something-else-legend`
-* in case you debug with VSCode, change in `.vscode/launch.json` param `/public/plugins/graph-panel-template-panel` to `/public/plugins/something-else-graph-panel`
+#### v0.0.1
 
-# Credits
+Based on [Graph Panel plugin](https://github.com/CorpGlory/grafana-graph-panel) v0.1.0
 
-Made by [CorpGlory Dev Team](https://corpglory.com)
-
-Based on 
-
-* [grafana-plugin-template-webpack-typescript](https://github.com/CorpGlory/grafana-plugin-template-webpack-typescript) 
-* [@types/grafana](https://github.com/CorpGlory/types-grafana)
-
-# Updates
-
-[Apica Team] Added ability to display markers
+Added support of the extended series data format to show check runs severity color.
+The extended series data format is provided by Apica Synthetic Monitoring datasource starting from version 1.1.3.
