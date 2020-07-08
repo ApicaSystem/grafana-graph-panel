@@ -7,6 +7,7 @@ import './thresholds_form';
 import template from './template';
 import _ from 'lodash';
 import config from 'grafana/app/core/config';
+import appEvents from "grafana/app/core/app_events";
 import { MetricsPanelCtrl, alertTab } from 'grafana/app/plugins/sdk';
 import { DataProcessor } from './data_processor';
 import { axesEditorComponent } from './axes_editor';
@@ -187,7 +188,7 @@ class GraphCtrl extends MetricsPanelCtrl {
       });
     } catch(err) {
       this.seriesList = [];
-      //alert(err.message);
+      appEvents.emit('alert-error', [this.datasource.name, err.message]);
     }
 
     this.dataWarning = null;
