@@ -7,8 +7,9 @@ import 'grafana/vendor/flot/jquery.flot.fillbelow.js';
 import 'grafana/vendor/flot/jquery.flot.crosshair.js';
 import 'grafana/vendor/flot/jquery.flot.dashes.js';
 import 'grafana/vendor/flot/jquery.flot.gauge.js';
-import 'grafana/vendor/flot/jquery.flot.pie.js';
+//import 'grafana/vendor/flot/jquery.flot.pie.js';
 import './vendor/flot/jquery.flot.events';
+import './vendor/flot/jquery.flot.severities';
 import { EventManager } from './vendor/grafana/event_manager';
 import { updateLegendValues } from './vendor/grafana/time_series2';
 import { tickStep } from './vendor/grafana/ticks';
@@ -54,7 +55,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
 
       /**
        * Split graph rendering into two parts.
-       * First, calculate series stats in buildFlotPairs() function. Then legend rendering started
+       * First, calculate series stats in buildFlotTuples() function. Then legend rendering started
        * (see ctrl.events.on('render') in legend.ts).
        * When legend is rendered it emits 'legend-rendering-complete' and graph rendered.
        */
@@ -64,7 +65,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
           return;
         }
         annotations = ctrl.annotations || [];
-        buildFlotPairs(data);
+        buildFlotTuples(data);
         updateLegendValues(data, panel);
 
         ctrl.events.emit('render-legend');
@@ -209,10 +210,10 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
         callPlot(options, true);
       }
 
-      function buildFlotPairs(data) {
+      function buildFlotTuples(data) {
         for (let i = 0; i < data.length; i++) {
           let series = data[i];
-          series.data = series.getFlotPairs(series.nullPointMode || panel.nullPointMode);
+          series.data = series.getFlotTuples(series.nullPointMode || panel.nullPointMode);
 
           // if hidden remove points and disable stack
           if (ctrl.hiddenSeries[series.alias]) {
@@ -710,4 +711,4 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
   };
 }
 
-coreModule.directive('grafanaTemplateGraph', graphDirective);
+coreModule.directive('apicaGraph', graphDirective);

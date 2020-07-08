@@ -7,6 +7,7 @@ import './thresholds_form';
 import template from './template';
 import _ from 'lodash';
 import config from 'grafana/app/core/config';
+import appEvents from "grafana/app/core/app_events";
 import { MetricsPanelCtrl, alertTab } from 'grafana/app/plugins/sdk';
 import { DataProcessor } from './data_processor';
 import { axesEditorComponent } from './axes_editor';
@@ -179,10 +180,16 @@ class GraphCtrl extends MetricsPanelCtrl {
 
   onDataReceived(dataList) {
     this.dataList = dataList;
-    this.seriesList = this.processor.getSeriesList({
-      dataList: dataList,
-      range: this.range,
-    });
+    
+    try {
+      this.seriesList = this.processor.getSeriesList({
+        dataList: dataList,
+        range: this.range,
+      });
+    } catch(err) {
+      this.seriesList = [];
+      appEvents.emit('alert-error', [this.datasource.name, 'Error during series processing. Make sure that data source output format is supported by the panel.']);
+    }
 
     this.dataWarning = null;
     const datapointsCount = this.seriesList.reduce((prev, series) => {

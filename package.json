@@ -4,7 +4,9 @@
   "description": "Webpack copy of Grafana default panel",
   "main": "dist/module",
   "scripts": {
-    "build": "webpack --config build/webpack.prod.conf.js",
+    "build": "npm run compile && npm run copy",
+    "compile": "webpack --config build/webpack.prod.conf.js",
+    "copy": "copyfiles README.md dist",
     "dev": "webpack --config build/webpack.dev.conf.js"
   },
   "keywords": [],
@@ -24,6 +26,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "copy-webpack-plugin": "^4.0.1",
+    "copyfiles": "^2.3.0",
     "loader-utils": "^1.1.0",
     "ts-loader": "^2.3.7",
     "typescript": "^2.4.2",
