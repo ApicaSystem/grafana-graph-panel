@@ -188,7 +188,7 @@ class GraphCtrl extends MetricsPanelCtrl {
       });
     } catch(err) {
       this.seriesList = [];
-      appEvents.emit('alert-error', [this.datasource.name, err.message]);
+      appEvents.emit('alert-error', [this.datasource.name, 'Error during series processing. Make sure that data source output format is supported by the panel.']);
     }
 
     this.dataWarning = null;

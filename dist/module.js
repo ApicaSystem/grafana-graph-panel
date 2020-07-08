@@ -2081,7 +2081,7 @@ var GraphCtrl = /** @class */ (function (_super) {
         }
         catch (err) {
             this.seriesList = [];
-            __WEBPACK_IMPORTED_MODULE_7_grafana_app_core_app_events___default.a.emit('alert-error', [this.datasource.name, err.message]);
+            __WEBPACK_IMPORTED_MODULE_7_grafana_app_core_app_events___default.a.emit('alert-error', [this.datasource.name, 'Error during series processing. Make sure that data source output format is supported by the panel.']);
         }
         this.dataWarning = null;
         var datapointsCount = this.seriesList.reduce(function (prev, series) {
