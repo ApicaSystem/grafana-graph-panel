@@ -1,4 +1,4 @@
-define(["lodash","jquery","angular","app/core/utils/kbn","vendor/flot/jquery.flot.js","moment","app/core/core","vendor/flot/jquery.flot.time.js","vendor/flot/jquery.flot.selection.js","vendor/flot/jquery.flot.stack.js","vendor/flot/jquery.flot.stackpercent.js","vendor/flot/jquery.flot.fillbelow.js","vendor/flot/jquery.flot.crosshair.js","vendor/flot/jquery.flot.dashes.js","vendor/flot/jquery.flot.gauge.js","app/core/core_module","app/core/config","app/core/app_events","app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_0__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_6__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_14__, __WEBPACK_EXTERNAL_MODULE_15__, __WEBPACK_EXTERNAL_MODULE_16__, __WEBPACK_EXTERNAL_MODULE_17__, __WEBPACK_EXTERNAL_MODULE_18__, __WEBPACK_EXTERNAL_MODULE_19__, __WEBPACK_EXTERNAL_MODULE_20__, __WEBPACK_EXTERNAL_MODULE_34__, __WEBPACK_EXTERNAL_MODULE_36__, __WEBPACK_EXTERNAL_MODULE_37__, __WEBPACK_EXTERNAL_MODULE_38__) { return /******/ (function(modules) { // webpackBootstrap
+define(["lodash","jquery","angular","app/core/utils/kbn","vendor/flot/jquery.flot.js","moment","app/core/core","vendor/flot/jquery.flot.time.js","vendor/flot/jquery.flot.selection.js","vendor/flot/jquery.flot.stack.js","vendor/flot/jquery.flot.stackpercent.js","vendor/flot/jquery.flot.fillbelow.js","vendor/flot/jquery.flot.crosshair.js","vendor/flot/jquery.flot.dashes.js","vendor/flot/jquery.flot.gauge.js","app/core/core_module","app/core/config","app/core/app_events","app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_0__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_6__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_14__, __WEBPACK_EXTERNAL_MODULE_15__, __WEBPACK_EXTERNAL_MODULE_16__, __WEBPACK_EXTERNAL_MODULE_17__, __WEBPACK_EXTERNAL_MODULE_18__, __WEBPACK_EXTERNAL_MODULE_19__, __WEBPACK_EXTERNAL_MODULE_20__, __WEBPACK_EXTERNAL_MODULE_35__, __WEBPACK_EXTERNAL_MODULE_37__, __WEBPACK_EXTERNAL_MODULE_38__, __WEBPACK_EXTERNAL_MODULE_39__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -1890,20 +1890,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GraphCtrl", function() { return GraphCtrl; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PanelCtrl", function() { return GraphCtrl; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__graph__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__legend__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__series_overrides_ctrl__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__thresholds_form__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__template__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__legend__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__series_overrides_ctrl__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__thresholds_form__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__template__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_grafana_app_core_config__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_grafana_app_core_config__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_grafana_app_core_config___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_grafana_app_core_config__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_grafana_app_core_app_events__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_grafana_app_core_app_events__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_grafana_app_core_app_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_grafana_app_core_app_events__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_grafana_app_plugins_sdk__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_grafana_app_plugins_sdk__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_grafana_app_plugins_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_grafana_app_plugins_sdk__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__data_processor__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__axes_editor__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__data_processor__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__axes_editor__ = __webpack_require__(41);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2248,27 +2248,29 @@ var GraphCtrl = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_grafana_vendor_flot_jquery_flot_dashes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_grafana_vendor_flot_jquery_flot_dashes_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_grafana_vendor_flot_jquery_flot_gauge_js__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_grafana_vendor_flot_jquery_flot_gauge_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_grafana_vendor_flot_jquery_flot_gauge_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__vendor_flot_jquery_flot_events__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__vendor_flot_jquery_flot_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__vendor_flot_jquery_flot_events__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__vendor_flot_jquery_flot_severities__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__vendor_flot_jquery_flot_severities___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__vendor_flot_jquery_flot_severities__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__vendor_grafana_event_manager__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__vendor_grafana_time_series2__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__vendor_grafana_ticks__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_jquery__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_lodash__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_moment__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_grafana_app_core_utils_kbn__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_grafana_app_core_utils_kbn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_grafana_app_core_utils_kbn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_grafana_app_core_core__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_grafana_app_core_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_grafana_app_core_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__graph_tooltip__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__graph_tooltip___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__graph_tooltip__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__threshold_manager__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__histogram__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__vendor_flot_jquery_flot_pie_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__vendor_flot_jquery_flot_pie_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__vendor_flot_jquery_flot_pie_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__vendor_flot_jquery_flot_events__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__vendor_flot_jquery_flot_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__vendor_flot_jquery_flot_events__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__vendor_flot_jquery_flot_severities__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__vendor_flot_jquery_flot_severities___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__vendor_flot_jquery_flot_severities__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__vendor_grafana_event_manager__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__vendor_grafana_time_series2__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__vendor_grafana_ticks__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_jquery__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_lodash__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_moment__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_grafana_app_core_utils_kbn__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_grafana_app_core_utils_kbn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_grafana_app_core_utils_kbn__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_grafana_app_core_core__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_grafana_app_core_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_grafana_app_core_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__graph_tooltip__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__graph_tooltip___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__graph_tooltip__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__threshold_manager__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__histogram__ = __webpack_require__(30);
 
 
 
@@ -2278,7 +2280,7 @@ var GraphCtrl = /** @class */ (function (_super) {
 
 
 
-//import 'grafana/vendor/flot/jquery.flot.pie.js';
+
 
 
 
@@ -2306,9 +2308,9 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
             var plot;
             var sortedSeries;
             var panelWidth = 0;
-            var eventManager = new __WEBPACK_IMPORTED_MODULE_11__vendor_grafana_event_manager__["a" /* EventManager */](ctrl);
-            var thresholdManager = new __WEBPACK_IMPORTED_MODULE_20__threshold_manager__["a" /* ThresholdManager */](ctrl);
-            var tooltip = new __WEBPACK_IMPORTED_MODULE_19__graph_tooltip___default.a(elem, dashboard, scope, function () {
+            var eventManager = new __WEBPACK_IMPORTED_MODULE_12__vendor_grafana_event_manager__["a" /* EventManager */](ctrl);
+            var thresholdManager = new __WEBPACK_IMPORTED_MODULE_21__threshold_manager__["a" /* ThresholdManager */](ctrl);
+            var tooltip = new __WEBPACK_IMPORTED_MODULE_20__graph_tooltip___default.a(elem, dashboard, scope, function () {
                 return sortedSeries;
             });
             // panel events
@@ -2332,14 +2334,14 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                 }
                 annotations = ctrl.annotations || [];
                 buildFlotTuples(data);
-                Object(__WEBPACK_IMPORTED_MODULE_12__vendor_grafana_time_series2__["c" /* updateLegendValues */])(data, panel);
+                Object(__WEBPACK_IMPORTED_MODULE_13__vendor_grafana_time_series2__["c" /* updateLegendValues */])(data, panel);
                 ctrl.events.emit('render-legend');
             });
             ctrl.events.on('legend-rendering-complete', function () {
                 render_panel();
             });
             // global events
-            __WEBPACK_IMPORTED_MODULE_18_grafana_app_core_core__["appEvents"].on('graph-hover', function (evt) {
+            __WEBPACK_IMPORTED_MODULE_19_grafana_app_core_core__["appEvents"].on('graph-hover', function (evt) {
                 // ignore other graph hover events if shared tooltip is disabled
                 if (!dashboard.sharedTooltipModeEnabled()) {
                     return;
@@ -2350,7 +2352,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                 }
                 tooltip.show(evt.pos);
             }, scope);
-            __WEBPACK_IMPORTED_MODULE_18_grafana_app_core_core__["appEvents"].on('graph-hover-clear', function (event, info) {
+            __WEBPACK_IMPORTED_MODULE_19_grafana_app_core_core__["appEvents"].on('graph-hover-clear', function (event, info) {
                 if (plot) {
                     tooltip.clear(plot);
                 }
@@ -2367,18 +2369,18 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
             function drawHook(plot) {
                 // add left axis labels
                 if (panel.yaxes[0].label && panel.yaxes[0].show) {
-                    __WEBPACK_IMPORTED_MODULE_14_jquery__("<div class='axisLabel left-yaxis-label flot-temp-elem'></div>")
+                    __WEBPACK_IMPORTED_MODULE_15_jquery__("<div class='axisLabel left-yaxis-label flot-temp-elem'></div>")
                         .text(panel.yaxes[0].label)
                         .appendTo(elem);
                 }
                 // add right axis labels
                 if (panel.yaxes[1].label && panel.yaxes[1].show) {
-                    __WEBPACK_IMPORTED_MODULE_14_jquery__("<div class='axisLabel right-yaxis-label flot-temp-elem'></div>")
+                    __WEBPACK_IMPORTED_MODULE_15_jquery__("<div class='axisLabel right-yaxis-label flot-temp-elem'></div>")
                         .text(panel.yaxes[1].label)
                         .appendTo(elem);
                 }
                 if (ctrl.dataWarning) {
-                    __WEBPACK_IMPORTED_MODULE_14_jquery__("<div class=\"datapoints-warning flot-temp-elem\">" + ctrl.dataWarning.title + "</div>").appendTo(elem);
+                    __WEBPACK_IMPORTED_MODULE_15_jquery__("<div class=\"datapoints-warning flot-temp-elem\">" + ctrl.dataWarning.title + "</div>").appendTo(elem);
                 }
                 thresholdManager.draw(plot);
             }
@@ -2469,13 +2471,13 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                     }
                     case 'histogram': {
                         var bucketSize = void 0;
-                        var values = Object(__WEBPACK_IMPORTED_MODULE_21__histogram__["b" /* getSeriesValues */])(data);
+                        var values = Object(__WEBPACK_IMPORTED_MODULE_22__histogram__["b" /* getSeriesValues */])(data);
                         if (data.length && values.length) {
-                            var histMin = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.min(__WEBPACK_IMPORTED_MODULE_15_lodash___default.a.map(data, function (s) { return s.stats.min; }));
-                            var histMax = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.max(__WEBPACK_IMPORTED_MODULE_15_lodash___default.a.map(data, function (s) { return s.stats.max; }));
+                            var histMin = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.min(__WEBPACK_IMPORTED_MODULE_16_lodash___default.a.map(data, function (s) { return s.stats.min; }));
+                            var histMax = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.max(__WEBPACK_IMPORTED_MODULE_16_lodash___default.a.map(data, function (s) { return s.stats.max; }));
                             var ticks = panel.xaxis.buckets || panelWidth / 50;
-                            bucketSize = Object(__WEBPACK_IMPORTED_MODULE_13__vendor_grafana_ticks__["b" /* tickStep */])(histMin, histMax, ticks);
-                            var histogram = Object(__WEBPACK_IMPORTED_MODULE_21__histogram__["a" /* convertValuesToHistogram */])(values, bucketSize);
+                            bucketSize = Object(__WEBPACK_IMPORTED_MODULE_14__vendor_grafana_ticks__["b" /* tickStep */])(histMin, histMax, ticks);
+                            var histogram = Object(__WEBPACK_IMPORTED_MODULE_22__histogram__["a" /* convertValuesToHistogram */])(values, bucketSize);
                             data[0].data = histogram;
                             options.series.bars.barWidth = bucketSize * 0.8;
                         }
@@ -2500,7 +2502,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
             }
             function callPlot(options, incrementRenderCounter) {
                 try {
-                    plot = __WEBPACK_IMPORTED_MODULE_14_jquery__["plot"](elem, sortedSeries, options);
+                    plot = __WEBPACK_IMPORTED_MODULE_15_jquery__["plot"](elem, sortedSeries, options);
                     if (ctrl.renderError) {
                         delete ctrl.error;
                         delete ctrl.inspector;
@@ -2613,8 +2615,8 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
             }
             function addTimeAxis(options) {
                 var ticks = panelWidth / 100;
-                var min = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.isUndefined(ctrl.range.from) ? null : ctrl.range.from.valueOf();
-                var max = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.isUndefined(ctrl.range.to) ? null : ctrl.range.to.valueOf();
+                var min = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.isUndefined(ctrl.range.from) ? null : ctrl.range.from.valueOf();
+                var max = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.isUndefined(ctrl.range.to) ? null : ctrl.range.to.valueOf();
                 options.xaxis = {
                     timezone: dashboard.getTimezone(),
                     show: panel.xaxis.show,
@@ -2627,7 +2629,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                 };
             }
             function addXSeriesAxis(options) {
-                var ticks = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.map(data, function (series, index) {
+                var ticks = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.map(data, function (series, index) {
                     return [index + 1, series.alias];
                 });
                 options.xaxis = {
@@ -2644,9 +2646,9 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                 var ticks, min, max;
                 var defaultTicks = panelWidth / 50;
                 if (data.length && bucketSize) {
-                    ticks = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.map(data[0].data, function (point) { return point[0]; });
-                    min = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.min(ticks);
-                    max = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.max(ticks);
+                    ticks = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.map(data[0].data, function (point) { return point[0]; });
+                    min = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.min(ticks);
+                    max = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.max(ticks);
                     // Adjust tick step
                     var tickStep_1 = bucketSize;
                     var ticks_num = Math.floor((max - min) / tickStep_1);
@@ -2681,13 +2683,13 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                 configureAxisMode(options.xaxis, 'short');
             }
             function addXTableAxis(options) {
-                var ticks = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.map(data, function (series, seriesIndex) {
-                    return __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.map(series.datapoints, function (point, pointIndex) {
+                var ticks = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.map(data, function (series, seriesIndex) {
+                    return __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.map(series.datapoints, function (point, pointIndex) {
                         var tickIndex = seriesIndex * series.datapoints.length + pointIndex;
                         return [tickIndex + 1, point[1]];
                     });
                 });
-                ticks = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.flatten(ticks, true);
+                ticks = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.flatten(ticks, true);
                 options.xaxis = {
                     timezone: dashboard.getTimezone(),
                     show: panel.xaxis.show,
@@ -2709,8 +2711,8 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                     tickDecimals: panel.yaxes[0].decimals,
                 };
                 options.yaxes.push(defaults);
-                if (__WEBPACK_IMPORTED_MODULE_15_lodash___default.a.find(data, { yaxis: 2 })) {
-                    var secondY = __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.clone(defaults);
+                if (__WEBPACK_IMPORTED_MODULE_16_lodash___default.a.find(data, { yaxis: 2 })) {
+                    var secondY = __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.clone(defaults);
                     secondY.index = 2;
                     secondY.show = panel.yaxes[1].show;
                     secondY.logBase = panel.yaxes[1].logBase || 1;
@@ -2729,7 +2731,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                 if (value === null || typeof value === 'undefined') {
                     return null;
                 }
-                return __WEBPACK_IMPORTED_MODULE_15_lodash___default.a.toNumber(value);
+                return __WEBPACK_IMPORTED_MODULE_16_lodash___default.a.toNumber(value);
             }
             function applyLogScale(axis, data) {
                 if (axis.logBase === 1) {
@@ -2824,7 +2826,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
             }
             function configureAxisMode(axis, format) {
                 axis.tickFormatter = function (val, axis) {
-                    return __WEBPACK_IMPORTED_MODULE_17_grafana_app_core_utils_kbn___default.a.valueFormats[format](val, axis.tickDecimals, axis.scaledDecimals);
+                    return __WEBPACK_IMPORTED_MODULE_18_grafana_app_core_utils_kbn___default.a.valueFormats[format](val, axis.tickDecimals, axis.scaledDecimals);
                 };
             }
             function time_format(ticks, min, max) {
@@ -2864,8 +2866,8 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
                 else {
                     scope.$apply(function () {
                         timeSrv.setTime({
-                            from: __WEBPACK_IMPORTED_MODULE_16_moment___default.a.utc(ranges.xaxis.from),
-                            to: __WEBPACK_IMPORTED_MODULE_16_moment___default.a.utc(ranges.xaxis.to),
+                            from: __WEBPACK_IMPORTED_MODULE_17_moment___default.a.utc(ranges.xaxis.from),
+                            to: __WEBPACK_IMPORTED_MODULE_17_moment___default.a.utc(ranges.xaxis.to),
                         });
                     });
                 }
@@ -2893,7 +2895,7 @@ function graphDirective(timeSrv, popoverSrv, contextSrv) {
         },
     };
 }
-__WEBPACK_IMPORTED_MODULE_18_grafana_app_core_core__["coreModule"].directive('apicaGraph', graphDirective);
+__WEBPACK_IMPORTED_MODULE_19_grafana_app_core_core__["coreModule"].directive('apicaGraph', graphDirective);
 
 
 /***/ }),
@@ -2946,13 +2948,839 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_20__;
 
 /***/ }),
 /* 21 */
+/***/ (function(module, exports) {
+
+/* Flot plugin for rendering pie charts.
+
+Copyright (c) 2007-2014 IOLA and Ole Laursen.
+Licensed under the MIT license.
+
+The plugin assumes that each series has a single data value, and that each
+value is a positive integer or zero.  Negative numbers don't make sense for a
+pie chart, and have unpredictable results.  The values do NOT need to be
+passed in as percentages; the plugin will calculate the total and per-slice
+percentages internally.
+
+* Created by Brian Medendorp
+
+* Updated with contributions from btburnett3, Anthony Aragues and Xavi Ivars
+
+The plugin supports these options:
+
+	series: {
+		pie: {
+			show: true/false
+			radius: 0-1 for percentage of fullsize, or a specified pixel length, or 'auto'
+			innerRadius: 0-1 for percentage of fullsize or a specified pixel length, for creating a donut effect
+			startAngle: 0-2 factor of PI used for starting angle (in radians) i.e 3/2 starts at the top, 0 and 2 have the same result
+			tilt: 0-1 for percentage to tilt the pie, where 1 is no tilt, and 0 is completely flat (nothing will show)
+			offset: {
+				top: integer value to move the pie up or down
+				left: integer value to move the pie left or right, or 'auto'
+			},
+			stroke: {
+				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#FFF')
+				width: integer pixel width of the stroke
+			},
+			label: {
+				show: true/false, or 'auto'
+				formatter:  a user-defined function that modifies the text/style of the label text
+				radius: 0-1 for percentage of fullsize, or a specified pixel length
+				background: {
+					color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#000')
+					opacity: 0-1
+				},
+				threshold: 0-1 for the percentage value at which to hide labels (if they're too small)
+			},
+			combine: {
+				threshold: 0-1 for the percentage value at which to combine slices (if they're too small)
+				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#CCC'), if null, the plugin will automatically use the color of the first slice to be combined
+				label: any text value of what the combined slice should be labeled
+			}
+			highlight: {
+				opacity: 0-1
+			}
+		}
+	}
+
+More detail and specific examples can be found in the included HTML file.
+
+*/
+
+(function($) {
+
+	// Maximum redraw attempts when fitting labels within the plot
+
+	var REDRAW_ATTEMPTS = 10;
+
+	// Factor by which to shrink the pie when fitting labels within the plot
+
+	var REDRAW_SHRINK = 0.95;
+
+	function init(plot) {
+
+		var canvas = null,
+			target = null,
+			options = null,
+			maxRadius = null,
+			centerLeft = null,
+			centerTop = null,
+			processed = false,
+			ctx = null;
+
+		// interactive variables
+
+		var highlights = [];
+
+		// add hook to determine if pie plugin in enabled, and then perform necessary operations
+
+		plot.hooks.processOptions.push(function(plot, options) {
+			if (options.series.pie.show) {
+
+				options.grid.show = false;
+
+				// set labels.show
+
+				if (options.series.pie.label.show == "auto") {
+					if (options.legend.show) {
+						options.series.pie.label.show = false;
+					} else {
+						options.series.pie.label.show = true;
+					}
+				}
+
+				// set radius
+
+				if (options.series.pie.radius == "auto") {
+					if (options.series.pie.label.show) {
+						options.series.pie.radius = 3/4;
+					} else {
+						options.series.pie.radius = 1;
+					}
+				}
+
+				// ensure sane tilt
+
+				if (options.series.pie.tilt > 1) {
+					options.series.pie.tilt = 1;
+				} else if (options.series.pie.tilt < 0) {
+					options.series.pie.tilt = 0;
+				}
+			}
+		});
+
+		plot.hooks.bindEvents.push(function(plot, eventHolder) {
+			var options = plot.getOptions();
+			if (options.series.pie.show) {
+				if (options.grid.hoverable) {
+					eventHolder.unbind("mousemove").mousemove(onMouseMove);
+				}
+				if (options.grid.clickable) {
+					eventHolder.unbind("click").click(onClick);
+				}
+			}
+		});
+
+		plot.hooks.processDatapoints.push(function(plot, series, data, datapoints) {
+			var options = plot.getOptions();
+			if (options.series.pie.show) {
+				processDatapoints(plot, series, data, datapoints);
+			}
+		});
+
+		plot.hooks.drawOverlay.push(function(plot, octx) {
+			var options = plot.getOptions();
+			if (options.series.pie.show) {
+				drawOverlay(plot, octx);
+			}
+		});
+
+		plot.hooks.draw.push(function(plot, newCtx) {
+			var options = plot.getOptions();
+			if (options.series.pie.show) {
+				draw(plot, newCtx);
+			}
+		});
+
+		function processDatapoints(plot, series, datapoints) {
+			if (!processed)	{
+				processed = true;
+				canvas = plot.getCanvas();
+				target = $(canvas).parent();
+				options = plot.getOptions();
+				plot.setData(combine(plot.getData()));
+			}
+		}
+
+		function combine(data) {
+
+			var total = 0,
+				combined = 0,
+				numCombined = 0,
+				color = options.series.pie.combine.color,
+				newdata = [];
+
+			// Fix up the raw data from Flot, ensuring the data is numeric
+
+			for (var i = 0; i < data.length; ++i) {
+
+				var value = data[i].data;
+
+				// If the data is an array, we'll assume that it's a standard
+				// Flot x-y pair, and are concerned only with the second value.
+
+				// Note how we use the original array, rather than creating a
+				// new one; this is more efficient and preserves any extra data
+				// that the user may have stored in higher indexes.
+
+				if ($.isArray(value) && value.length == 1) {
+    				value = value[0];
+				}
+
+				if ($.isArray(value)) {
+					// Equivalent to $.isNumeric() but compatible with jQuery < 1.7
+					if (!isNaN(parseFloat(value[1])) && isFinite(value[1])) {
+						value[1] = +value[1];
+					} else {
+						value[1] = 0;
+					}
+				} else if (!isNaN(parseFloat(value)) && isFinite(value)) {
+					value = [1, +value];
+				} else {
+					value = [1, 0];
+				}
+
+				data[i].data = [value];
+			}
+
+			// Sum up all the slices, so we can calculate percentages for each
+
+			for (var i = 0; i < data.length; ++i) {
+				total += data[i].data[0][1];
+			}
+
+			// Count the number of slices with percentages below the combine
+			// threshold; if it turns out to be just one, we won't combine.
+
+			for (var i = 0; i < data.length; ++i) {
+				var value = data[i].data[0][1];
+				if (value / total <= options.series.pie.combine.threshold) {
+					combined += value;
+					numCombined++;
+					if (!color) {
+						color = data[i].color;
+					}
+				}
+			}
+
+			for (var i = 0; i < data.length; ++i) {
+				var value = data[i].data[0][1];
+				if (numCombined < 2 || value / total > options.series.pie.combine.threshold) {
+					newdata.push(
+						$.extend(data[i], {     /* extend to allow keeping all other original data values
+						                           and using them e.g. in labelFormatter. */
+							data: [[1, value]],
+							color: data[i].color,
+							label: data[i].label,
+							angle: value * Math.PI * 2 / total,
+							percent: value / (total / 100)
+						})
+					);
+				}
+			}
+
+			if (numCombined > 1) {
+				newdata.push({
+					data: [[1, combined]],
+					color: color,
+					label: options.series.pie.combine.label,
+					angle: combined * Math.PI * 2 / total,
+					percent: combined / (total / 100)
+				});
+			}
+
+			return newdata;
+		}
+
+		function draw(plot, newCtx) {
+
+			if (!target) {
+				return; // if no series were passed
+			}
+
+			var canvasWidth = plot.getPlaceholder().width(),
+				canvasHeight = plot.getPlaceholder().height(),
+				legendWidth = target.children().filter(".legend").children().width() || 0;
+
+			ctx = newCtx;
+
+			// WARNING: HACK! REWRITE THIS CODE AS SOON AS POSSIBLE!
+
+			// When combining smaller slices into an 'other' slice, we need to
+			// add a new series.  Since Flot gives plugins no way to modify the
+			// list of series, the pie plugin uses a hack where the first call
+			// to processDatapoints results in a call to setData with the new
+			// list of series, then subsequent processDatapoints do nothing.
+
+			// The plugin-global 'processed' flag is used to control this hack;
+			// it starts out false, and is set to true after the first call to
+			// processDatapoints.
+
+			// Unfortunately this turns future setData calls into no-ops; they
+			// call processDatapoints, the flag is true, and nothing happens.
+
+			// To fix this we'll set the flag back to false here in draw, when
+			// all series have been processed, so the next sequence of calls to
+			// processDatapoints once again starts out with a slice-combine.
+			// This is really a hack; in 0.9 we need to give plugins a proper
+			// way to modify series before any processing begins.
+
+			processed = false;
+
+			// calculate maximum radius and center point
+
+			maxRadius =  Math.min(canvasWidth, canvasHeight / options.series.pie.tilt) / 2;
+			centerTop = canvasHeight / 2 + options.series.pie.offset.top;
+			centerLeft = canvasWidth / 2;
+
+			if (options.series.pie.offset.left == "auto") {
+				if (options.legend.position.match("w")) {
+					centerLeft += legendWidth / 2;
+				} else {
+					centerLeft -= legendWidth / 2;
+				}
+				if (centerLeft < maxRadius) {
+					centerLeft = maxRadius;
+				} else if (centerLeft > canvasWidth - maxRadius) {
+					centerLeft = canvasWidth - maxRadius;
+				}
+			} else {
+				centerLeft += options.series.pie.offset.left;
+			}
+
+			var slices = plot.getData(),
+				attempts = 0;
+
+			// Keep shrinking the pie's radius until drawPie returns true,
+			// indicating that all the labels fit, or we try too many times.
+
+			do {
+				if (attempts > 0) {
+					maxRadius *= REDRAW_SHRINK;
+				}
+				attempts += 1;
+				clear();
+				if (options.series.pie.tilt <= 0.8) {
+					drawShadow();
+				}
+			} while (!drawPie() && attempts < REDRAW_ATTEMPTS)
+
+			if (attempts >= REDRAW_ATTEMPTS) {
+				clear();
+				target.prepend("<div class='error'>Could not draw pie with labels contained inside canvas</div>");
+			}
+
+			if (plot.setSeries && plot.insertLegend) {
+				plot.setSeries(slices);
+				plot.insertLegend();
+			}
+
+			// we're actually done at this point, just defining internal functions at this point
+
+			function clear() {
+				ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+				target.children().filter(".pieLabel, .pieLabelBackground").remove();
+			}
+
+			function drawShadow() {
+
+				var shadowLeft = options.series.pie.shadow.left;
+				var shadowTop = options.series.pie.shadow.top;
+				var edge = 10;
+				var alpha = options.series.pie.shadow.alpha;
+				var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
+
+				if (radius >= canvasWidth / 2 - shadowLeft || radius * options.series.pie.tilt >= canvasHeight / 2 - shadowTop || radius <= edge) {
+					return;	// shadow would be outside canvas, so don't draw it
+				}
+
+				ctx.save();
+				ctx.translate(shadowLeft,shadowTop);
+				ctx.globalAlpha = alpha;
+				ctx.fillStyle = "#000";
+
+				// center and rotate to starting position
+
+				ctx.translate(centerLeft,centerTop);
+				ctx.scale(1, options.series.pie.tilt);
+
+				//radius -= edge;
+
+				for (var i = 1; i <= edge; i++) {
+					ctx.beginPath();
+					ctx.arc(0, 0, radius, 0, Math.PI * 2, false);
+					ctx.fill();
+					radius -= i;
+				}
+
+				ctx.restore();
+			}
+
+			function drawPie() {
+
+				var startAngle = Math.PI * options.series.pie.startAngle;
+				var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
+
+				// center and rotate to starting position
+
+				ctx.save();
+				ctx.translate(centerLeft,centerTop);
+				ctx.scale(1, options.series.pie.tilt);
+				//ctx.rotate(startAngle); // start at top; -- This doesn't work properly in Opera
+
+				// draw slices
+
+				ctx.save();
+				var currentAngle = startAngle;
+				for (var i = 0; i < slices.length; ++i) {
+					slices[i].startAngle = currentAngle;
+					drawSlice(slices[i].angle, slices[i].color, true);
+				}
+				ctx.restore();
+
+				// draw slice outlines
+
+				if (options.series.pie.stroke.width > 0) {
+					ctx.save();
+					ctx.lineWidth = options.series.pie.stroke.width;
+					currentAngle = startAngle;
+					for (var i = 0; i < slices.length; ++i) {
+						drawSlice(slices[i].angle, options.series.pie.stroke.color, false);
+					}
+					ctx.restore();
+				}
+
+				// draw donut hole
+
+				drawDonutHole(ctx);
+
+				ctx.restore();
+
+				// Draw the labels, returning true if they fit within the plot
+
+				if (options.series.pie.label.show) {
+					return drawLabels();
+				} else return true;
+
+				function drawSlice(angle, color, fill) {
+
+					if (angle <= 0 || isNaN(angle)) {
+						return;
+					}
+
+					if (fill) {
+						ctx.fillStyle = color;
+					} else {
+						ctx.strokeStyle = color;
+						ctx.lineJoin = "round";
+					}
+
+					ctx.beginPath();
+					if (Math.abs(angle - Math.PI * 2) > 0.000000001) {
+						ctx.moveTo(0, 0); // Center of the pie
+					}
+
+					//ctx.arc(0, 0, radius, 0, angle, false); // This doesn't work properly in Opera
+					ctx.arc(0, 0, radius,currentAngle, currentAngle + angle / 2, false);
+					ctx.arc(0, 0, radius,currentAngle + angle / 2, currentAngle + angle, false);
+					ctx.closePath();
+					//ctx.rotate(angle); // This doesn't work properly in Opera
+					currentAngle += angle;
+
+					if (fill) {
+						ctx.fill();
+					} else {
+						ctx.stroke();
+					}
+				}
+
+				function drawLabels() {
+
+					var currentAngle = startAngle;
+					var radius = options.series.pie.label.radius > 1 ? options.series.pie.label.radius : maxRadius * options.series.pie.label.radius;
+
+					for (var i = 0; i < slices.length; ++i) {
+						if (slices[i].percent >= options.series.pie.label.threshold * 100) {
+							if (!drawLabel(slices[i], currentAngle, i)) {
+								return false;
+							}
+						}
+						currentAngle += slices[i].angle;
+					}
+
+					return true;
+
+					function drawLabel(slice, startAngle, index) {
+
+						if (slice.data[0][1] == 0) {
+							return true;
+						}
+
+						// format label text
+
+						var lf = options.legend.labelFormatter, text, plf = options.series.pie.label.formatter;
+
+						if (lf) {
+							text = lf(slice.label, slice);
+						} else {
+							text = slice.label;
+						}
+
+						if (plf) {
+							text = plf(text, slice);
+						}
+
+						var halfAngle = ((startAngle + slice.angle) + startAngle) / 2;
+						var x = centerLeft + Math.round(Math.cos(halfAngle) * radius);
+						var y = centerTop + Math.round(Math.sin(halfAngle) * radius) * options.series.pie.tilt;
+
+						var html = "<span class='pieLabel' id='pieLabel" + index + "' style='position:absolute;top:" + y + "px;left:" + x + "px;'>" + text + "</span>";
+						target.append(html);
+
+						var label = target.children("#pieLabel" + index);
+						var labelTop = (y - label.height() / 2);
+						var labelLeft = (x - label.width() / 2);
+
+						label.css("top", labelTop);
+						label.css("left", labelLeft);
+
+						// check to make sure that the label is not outside the canvas
+
+						if (0 - labelTop > 0 || 0 - labelLeft > 0 || canvasHeight - (labelTop + label.height()) < 0 || canvasWidth - (labelLeft + label.width()) < 0) {
+							return false;
+						}
+
+						if (options.series.pie.label.background.opacity != 0) {
+
+							// put in the transparent background separately to avoid blended labels and label boxes
+
+							var c = options.series.pie.label.background.color;
+
+							if (c == null) {
+								c = slice.color;
+							}
+
+							var pos = "top:" + labelTop + "px;left:" + labelLeft + "px;";
+							$("<div class='pieLabelBackground' style='position:absolute;width:" + label.width() + "px;height:" + label.height() + "px;" + pos + "background-color:" + c + ";'></div>")
+								.css("opacity", options.series.pie.label.background.opacity)
+								.insertBefore(label);
+						}
+
+						return true;
+					} // end individual label function
+				} // end drawLabels function
+			} // end drawPie function
+		} // end draw function
+
+		// Placed here because it needs to be accessed from multiple locations
+
+		function drawDonutHole(layer) {
+			if (options.series.pie.innerRadius > 0) {
+
+				// subtract the center
+
+				layer.save();
+				var innerRadius = options.series.pie.innerRadius > 1 ? options.series.pie.innerRadius : maxRadius * options.series.pie.innerRadius;
+				layer.globalCompositeOperation = "destination-out"; // this does not work with excanvas, but it will fall back to using the stroke color
+				layer.beginPath();
+				layer.fillStyle = options.series.pie.stroke.color;
+				layer.arc(0, 0, innerRadius, 0, Math.PI * 2, false);
+				layer.fill();
+				layer.closePath();
+				layer.restore();
+
+				// add inner stroke
+
+				layer.save();
+				layer.beginPath();
+				layer.strokeStyle = options.series.pie.stroke.color;
+				layer.arc(0, 0, innerRadius, 0, Math.PI * 2, false);
+				layer.stroke();
+				layer.closePath();
+				layer.restore();
+
+				// TODO: add extra shadow inside hole (with a mask) if the pie is tilted.
+			}
+		}
+
+		//-- Additional Interactive related functions --
+
+		function isPointInPoly(poly, pt) {
+			for(var c = false, i = -1, l = poly.length, j = l - 1; ++i < l; j = i)
+				((poly[i][1] <= pt[1] && pt[1] < poly[j][1]) || (poly[j][1] <= pt[1] && pt[1]< poly[i][1]))
+				&& (pt[0] < (poly[j][0] - poly[i][0]) * (pt[1] - poly[i][1]) / (poly[j][1] - poly[i][1]) + poly[i][0])
+				&& (c = !c);
+			return c;
+		}
+
+		function findNearbySlice(mouseX, mouseY) {
+
+			var slices = plot.getData(),
+				options = plot.getOptions(),
+				radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius,
+				x, y;
+
+			for (var i = 0; i < slices.length; ++i) {
+
+				var s = slices[i];
+
+				if (s.pie.show) {
+
+					ctx.save();
+					ctx.beginPath();
+					ctx.moveTo(0, 0); // Center of the pie
+					//ctx.scale(1, options.series.pie.tilt);	// this actually seems to break everything when here.
+					ctx.arc(0, 0, radius, s.startAngle, s.startAngle + s.angle / 2, false);
+					ctx.arc(0, 0, radius, s.startAngle + s.angle / 2, s.startAngle + s.angle, false);
+					ctx.closePath();
+					x = mouseX - centerLeft;
+					y = mouseY - centerTop;
+
+					if (ctx.isPointInPath) {
+						if (ctx.isPointInPath(mouseX - centerLeft, mouseY - centerTop)) {
+							ctx.restore();
+							return {
+								datapoint: [s.percent, s.data],
+								dataIndex: 0,
+								series: s,
+								seriesIndex: i
+							};
+						}
+					} else {
+
+						// excanvas for IE doesn;t support isPointInPath, this is a workaround.
+
+						var p1X = radius * Math.cos(s.startAngle),
+							p1Y = radius * Math.sin(s.startAngle),
+							p2X = radius * Math.cos(s.startAngle + s.angle / 4),
+							p2Y = radius * Math.sin(s.startAngle + s.angle / 4),
+							p3X = radius * Math.cos(s.startAngle + s.angle / 2),
+							p3Y = radius * Math.sin(s.startAngle + s.angle / 2),
+							p4X = radius * Math.cos(s.startAngle + s.angle / 1.5),
+							p4Y = radius * Math.sin(s.startAngle + s.angle / 1.5),
+							p5X = radius * Math.cos(s.startAngle + s.angle),
+							p5Y = radius * Math.sin(s.startAngle + s.angle),
+							arrPoly = [[0, 0], [p1X, p1Y], [p2X, p2Y], [p3X, p3Y], [p4X, p4Y], [p5X, p5Y]],
+							arrPoint = [x, y];
+
+						// TODO: perhaps do some mathmatical trickery here with the Y-coordinate to compensate for pie tilt?
+
+						if (isPointInPoly(arrPoly, arrPoint)) {
+							ctx.restore();
+							return {
+								datapoint: [s.percent, s.data],
+								dataIndex: 0,
+								series: s,
+								seriesIndex: i
+							};
+						}
+					}
+
+					ctx.restore();
+				}
+			}
+
+			return null;
+		}
+
+		function onMouseMove(e) {
+			triggerClickHoverEvent("plothover", e);
+		}
+
+		function onClick(e) {
+			triggerClickHoverEvent("plotclick", e);
+		}
+
+		// trigger click or hover event (they send the same parameters so we share their code)
+
+		function triggerClickHoverEvent(eventname, e) {
+
+			var offset = plot.offset();
+			var canvasX = parseInt(e.pageX - offset.left);
+			var canvasY =  parseInt(e.pageY - offset.top);
+			var item = findNearbySlice(canvasX, canvasY);
+
+			if (options.grid.autoHighlight) {
+
+				// clear auto-highlights
+
+				for (var i = 0; i < highlights.length; ++i) {
+					var h = highlights[i];
+					if (h.auto == eventname && !(item && h.series == item.series)) {
+						unhighlight(h.series);
+					}
+				}
+			}
+
+			// highlight the slice
+
+			if (item) {
+				highlight(item.series, eventname);
+			}
+
+			// trigger any hover bind events
+
+			var pos = { pageX: e.pageX, pageY: e.pageY };
+			target.trigger(eventname, [pos, item]);
+		}
+
+		function highlight(s, auto) {
+			//if (typeof s == "number") {
+			//	s = series[s];
+			//}
+
+			var i = indexOfHighlight(s);
+
+			if (i == -1) {
+				highlights.push({ series: s, auto: auto });
+				plot.triggerRedrawOverlay();
+			} else if (!auto) {
+				highlights[i].auto = false;
+			}
+		}
+
+		function unhighlight(s) {
+			if (s == null) {
+				highlights = [];
+				plot.triggerRedrawOverlay();
+			}
+
+			//if (typeof s == "number") {
+			//	s = series[s];
+			//}
+
+			var i = indexOfHighlight(s);
+
+			if (i != -1) {
+				highlights.splice(i, 1);
+				plot.triggerRedrawOverlay();
+			}
+		}
+
+		function indexOfHighlight(s) {
+			for (var i = 0; i < highlights.length; ++i) {
+				var h = highlights[i];
+				if (h.series == s)
+					return i;
+			}
+			return -1;
+		}
+
+		function drawOverlay(plot, octx) {
+
+			var options = plot.getOptions();
+
+			var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
+
+			octx.save();
+			octx.translate(centerLeft, centerTop);
+			octx.scale(1, options.series.pie.tilt);
+
+			for (var i = 0; i < highlights.length; ++i) {
+				drawHighlight(highlights[i].series);
+			}
+
+			drawDonutHole(octx);
+
+			octx.restore();
+
+			function drawHighlight(series) {
+
+				if (series.angle <= 0 || isNaN(series.angle)) {
+					return;
+				}
+
+				//octx.fillStyle = parseColor(options.series.pie.highlight.color).scale(null, null, null, options.series.pie.highlight.opacity).toString();
+				octx.fillStyle = "rgba(255, 255, 255, " + options.series.pie.highlight.opacity + ")"; // this is temporary until we have access to parseColor
+				octx.beginPath();
+				if (Math.abs(series.angle - Math.PI * 2) > 0.000000001) {
+					octx.moveTo(0, 0); // Center of the pie
+				}
+				octx.arc(0, 0, radius, series.startAngle, series.startAngle + series.angle / 2, false);
+				octx.arc(0, 0, radius, series.startAngle + series.angle / 2, series.startAngle + series.angle, false);
+				octx.closePath();
+				octx.fill();
+			}
+		}
+	} // end init (plugin body)
+
+	// define pie specific options and their default values
+
+	var options = {
+		series: {
+			pie: {
+				show: false,
+				radius: "auto",	// actual radius of the visible pie (based on full calculated radius if <=1, or hard pixel value)
+				innerRadius: 0, /* for donut */
+				startAngle: 3/2,
+				tilt: 1,
+				shadow: {
+					left: 5,	// shadow left offset
+					top: 15,	// shadow top offset
+					alpha: 0.02	// shadow alpha
+				},
+				offset: {
+					top: 0,
+					left: "auto"
+				},
+				stroke: {
+					color: "#fff",
+					width: 1
+				},
+				label: {
+					show: "auto",
+					formatter: function(label, slice) {
+						return "<div style='font-size:x-small;text-align:center;padding:2px;color:" + slice.color + ";'>" + label + "<br/>" + Math.round(slice.percent) + "%</div>";
+					},	// formatter function
+					radius: 1,	// radius at which to place the labels (based on full calculated radius if <=1, or hard pixel value)
+					background: {
+						color: null,
+						opacity: 0
+					},
+					threshold: 0	// percentage at which to hide the label (i.e. the slice is too narrow)
+				},
+				combine: {
+					threshold: -1,	// percentage at which to combine little slices into one larger slice
+					color: null,	// color to give the new slice (auto-generated if null)
+					label: "Other"	// label to give the new slice
+				},
+				highlight: {
+					//color: "#fff",		// will add this functionality once parseColor is available
+					opacity: 0.5
+				}
+			}
+		}
+	};
+
+	$.plot.plugins.push({
+		init: init,
+		options: options,
+		name: "pie",
+		version: "1.1"
+	});
+
+})(jQuery);
+
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
   __webpack_require__(1),
   __webpack_require__(0),
   __webpack_require__(2),
-  __webpack_require__(22),
+  __webpack_require__(23),
 ], __WEBPACK_AMD_DEFINE_RESULT__ = function ($, _, angular, Drop) {
   'use strict';
 
@@ -3555,14 +4383,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether-drop 1.4.1 */
 
 (function(root, factory) {
   if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(23)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(24)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -4124,7 +4952,7 @@ return Drop;
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.3 */
@@ -5947,7 +6775,7 @@ return Tether;
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_RESULT__ = function ($) {
@@ -6070,7 +6898,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6081,7 +6909,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_tinycolor2__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_tinycolor2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_tinycolor2__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__event__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__event__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__colors__ = __webpack_require__(8);
 
 
@@ -6240,7 +7068,7 @@ function addAlphaToRGB(colorString, alpha) {
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6254,7 +7082,7 @@ var AnnotationEvent = /** @class */ (function () {
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
@@ -6552,7 +7380,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6765,7 +7593,7 @@ var ThresholdManager = /** @class */ (function () {
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6822,7 +7650,7 @@ function getBucketBound(value, bucketSize) {
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6832,7 +7660,7 @@ function getBucketBound(value, bucketSize) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_perfect_scrollbar__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_perfect_scrollbar__ = __webpack_require__(32);
 
 
 
@@ -7063,7 +7891,7 @@ module.directive('apicaLegend', function (popoverSrv, $timeout) {
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8374,7 +9202,7 @@ PerfectScrollbar.prototype.removePsClasses = function removePsClasses () {
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8534,12 +9362,12 @@ __WEBPACK_IMPORTED_MODULE_1_angular___default.a.module('grafana.controllers').co
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export ThresholdFormCtrl */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_grafana_app_core_core_module__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_grafana_app_core_core_module__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_grafana_app_core_core_module___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_grafana_app_core_core_module__);
 
 var ThresholdFormCtrl = /** @class */ (function () {
@@ -8607,25 +9435,19 @@ __WEBPACK_IMPORTED_MODULE_0_grafana_app_core_core_module___default.a.directive('
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_34__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_35__;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var template = "\n<div class=\"graph-panel\" ng-class=\"{'graph-panel--legend-right': ctrl.panel.legend.rightSide}\">\n  <div class=\"graph-panel__chart\" apica-graph ng-dblclick=\"ctrl.zoomOut()\">\n  </div>\n\n  <div class=\"graph-legend\" apica-legend></div>\n</div>\n";
 /* harmony default export */ __webpack_exports__["a"] = (template);
 
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_36__;
 
 /***/ }),
 /* 37 */
@@ -8641,6 +9463,12 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_38__;
 
 /***/ }),
 /* 39 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_39__;
+
+/***/ }),
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8852,7 +9680,7 @@ var DataProcessor = /** @class */ (function () {
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

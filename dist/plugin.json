@@ -14,7 +14,7 @@
       "small": "img/graph-panel_asm.svg",
       "large": "img/graph-panel_asm.svg"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
   },
   "dependencies": {
     "grafanaVersion": "5.0.x"
